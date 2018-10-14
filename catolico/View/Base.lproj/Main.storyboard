@@ -113,51 +113,13 @@
                                 <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OracaoRowView" rowHeight="89" id="Zsl-Cy-zdW" customClass="OracaoRow" customModule="catolico" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="89"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JD0-P7-xcs">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zsl-Cy-zdW" id="3tL-lB-OPu">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="88.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JD0-P7-xcs" id="Hpj-BZ-9tl">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categoria" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ek7-Rh-ptb">
-                                                    <rect key="frame" x="20" y="42" width="75" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heartFilled" translatesAutoresizingMaskIntoConstraints="NO" id="Pkz-TB-scH">
-                                                    <rect key="frame" x="273" y="12" width="25" height="64.5"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="25" id="OM4-XE-UG1"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oração Exemplo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FeV-An-vRV">
-                                                    <rect key="frame" x="20" y="13" width="133" height="21"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Pkz-TB-scH" secondAttribute="trailing" constant="7" id="3aU-3b-s2G"/>
-                                                <constraint firstItem="FeV-An-vRV" firstAttribute="top" secondItem="3tL-lB-OPu" secondAttribute="topMargin" constant="2" id="D10-CO-62o"/>
-                                                <constraint firstItem="ek7-Rh-ptb" firstAttribute="leading" secondItem="3tL-lB-OPu" secondAttribute="leadingMargin" constant="5" id="SAa-qf-mUS"/>
-                                                <constraint firstItem="Pkz-TB-scH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ek7-Rh-ptb" secondAttribute="trailing" constant="8" symbolic="YES" id="Sex-S4-Lbp"/>
-                                                <constraint firstItem="ek7-Rh-ptb" firstAttribute="top" secondItem="FeV-An-vRV" secondAttribute="bottom" constant="8" id="Vvq-Le-Xlm"/>
-                                                <constraint firstItem="Pkz-TB-scH" firstAttribute="centerY" secondItem="3tL-lB-OPu" secondAttribute="centerY" id="Wt3-4A-rVL"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FeV-An-vRV" secondAttribute="trailing" constant="20" symbolic="YES" id="bfR-y5-xLh"/>
-                                                <constraint firstItem="FeV-An-vRV" firstAttribute="leading" secondItem="3tL-lB-OPu" secondAttribute="leadingMargin" constant="5" id="etY-tv-BR7"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="ek7-Rh-ptb" secondAttribute="bottom" constant="15" id="lPY-EH-4DA"/>
-                                                <constraint firstItem="Pkz-TB-scH" firstAttribute="top" secondItem="3tL-lB-OPu" secondAttribute="topMargin" constant="1" id="pag-p8-UX3"/>
-                                                <constraint firstItem="ek7-Rh-ptb" firstAttribute="top" secondItem="FeV-An-vRV" secondAttribute="bottom" constant="8" id="tYU-wy-DoZ"/>
-                                            </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="imgHearth" destination="Pkz-TB-scH" id="P4q-wk-CON"/>
-                                            <outlet property="txtCategoria" destination="ek7-Rh-ptb" id="YjX-kw-yUw"/>
-                                            <outlet property="txtOracao" destination="FeV-An-vRV" id="gij-8l-M9X"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -193,7 +155,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="heartFilled" width="33" height="31"/>
         <image name="ic_angel_selected" width="25" height="25"/>
         <image name="ic_angel_selected.png" width="25" height="25"/>
         <image name="ic_filter" width="25" height="25"/>

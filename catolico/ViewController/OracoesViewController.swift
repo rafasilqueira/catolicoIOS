@@ -23,7 +23,7 @@ class OracoesViewController: UIViewController, UITableViewDelegate , UITableView
         tableView.dataSource = self
         tableView.separatorStyle = .singleLine
         tableView.contentInset = UIEdgeInsets(top: 44,left: 0,bottom: 0,right: 0);
-        tableView.register(UINib(nibName: "OracaoRowView", bundle: nil) , forCellReuseIdentifier: "OracaoRow")
+        tableView.register(UINib(nibName: "PrayerRow", bundle: nil) , forCellReuseIdentifier: "PrayerRow")
         configureTableView()
         callAllOracoes()
     }
@@ -38,12 +38,15 @@ class OracoesViewController: UIViewController, UITableViewDelegate , UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "OracaoRowView", for: indexPath) as! OracaoRow
-
-        let oracao : Oracao = oracoesList[indexPath.row]
-        cell.txtOracao.text = oracao.nome
-        cell.txtCategoria.text = oracao.categoriaOracao.nome
-        return cell
+            if tableView.dequeueReusableCell(withIdentifier: "PrayerRow") != nil{
+            let cell = tableView.dequeueReusableCell(withIdentifier: "PrayerRow", for: indexPath) as! PrayerRow
+            let oracao : Oracao = oracoesList[indexPath.row]
+            cell.txtOracao.text = oracao.nome
+            cell.txtCategoria.text = oracao.categoriaOracao.nome
+            return cell
+        }
+        return UITableViewCell()
+      
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
