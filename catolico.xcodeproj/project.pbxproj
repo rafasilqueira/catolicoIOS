@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4ADC5E8A2170DC7B00CA8924 /* OracaoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADC5E892170DC7B00CA8924 /* OracaoRow.swift */; };
+		6E69E4AF214E891200052036 /* Oracao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E69E4AE214E891200052036 /* Oracao.swift */; };
+		6E69E4B1214E8A2400052036 /* CategoriaOracao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E69E4B0214E8A2400052036 /* CategoriaOracao.swift */; };
+		6EB020A02159A56B00AA8F27 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB0209F2159A56B00AA8F27 /* MessageCell.xib */; };
+		6EB020A22159A57900AA8F27 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB020A12159A57900AA8F27 /* CustomMessageCell.swift */; };
 		6EFB50062132157300F113F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB50052132157300F113F7 /* AppDelegate.swift */; };
-		6EFB50082132157300F113F7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB50072132157300F113F7 /* FirstViewController.swift */; };
-		6EFB500A2132157300F113F7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB50092132157300F113F7 /* SecondViewController.swift */; };
+		6EFB500A2132157300F113F7 /* OracoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB50092132157300F113F7 /* OracoesViewController.swift */; };
 		6EFB500D2132157300F113F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFB500B2132157300F113F7 /* Main.storyboard */; };
 		6EFB500F2132157600F113F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EFB500E2132157600F113F7 /* Assets.xcassets */; };
 		6EFB50122132157600F113F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EFB50102132157600F113F7 /* LaunchScreen.storyboard */; };
 		6EFB501D2132157600F113F7 /* catolicoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB501C2132157600F113F7 /* catolicoTests.swift */; };
 		6EFB50282132157600F113F7 /* catolicoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFB50272132157600F113F7 /* catolicoUITests.swift */; };
+		B472DD26F84F4C7AC6A05868 /* Pods_catolico.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4729236E375B8E6C960065 /* Pods_catolico.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +40,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33F78C1C85C2E19787821531 /* Pods-catolico.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-catolico.release.xcconfig"; path = "Pods/Target Support Files/Pods-catolico/Pods-catolico.release.xcconfig"; sourceTree = "<group>"; };
+		40004CDDDA61E0F55ABF39BA /* Pods-catolico.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-catolico.debug.xcconfig"; path = "Pods/Target Support Files/Pods-catolico/Pods-catolico.debug.xcconfig"; sourceTree = "<group>"; };
+		4ADC5E892170DC7B00CA8924 /* OracaoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracaoRow.swift; sourceTree = "<group>"; };
+		6E69E4AE214E891200052036 /* Oracao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oracao.swift; sourceTree = "<group>"; };
+		6E69E4B0214E8A2400052036 /* CategoriaOracao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaOracao.swift; sourceTree = "<group>"; };
+		6EB0209F2159A56B00AA8F27 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		6EB020A12159A57900AA8F27 /* CustomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
 		6EFB50022132157300F113F7 /* catolico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = catolico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFB50052132157300F113F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6EFB50072132157300F113F7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		6EFB50092132157300F113F7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		6EFB50092132157300F113F7 /* OracoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OracoesViewController.swift; sourceTree = "<group>"; };
 		6EFB500C2132157300F113F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6EFB500E2132157600F113F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EFB50112132157600F113F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		6EFB50232132157600F113F7 /* catolicoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = catolicoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EFB50272132157600F113F7 /* catolicoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = catolicoUITests.swift; sourceTree = "<group>"; };
 		6EFB50292132157600F113F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4729236E375B8E6C960065 /* Pods_catolico.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_catolico.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B472DD26F84F4C7AC6A05868 /* Pods_catolico.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +89,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A1E1099BAD261F032492BEF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40004CDDDA61E0F55ABF39BA /* Pods-catolico.debug.xcconfig */,
+				33F78C1C85C2E19787821531 /* Pods-catolico.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1E222AB31AE46C3B4D4F6855 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF4729236E375B8E6C960065 /* Pods_catolico.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E08D16D215F73E2001240A4 /* OracaoRow */ = {
+			isa = PBXGroup;
+			children = (
+				4ADC5E892170DC7B00CA8924 /* OracaoRow.swift */,
+			);
+			path = OracaoRow;
+			sourceTree = "<group>";
+		};
+		6E6773AD214DBFAD002B042D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E08D16D215F73E2001240A4 /* OracaoRow */,
+				6EB0209E2159A49500AA8F27 /* MessageView */,
+				6EFB500B2132157300F113F7 /* Main.storyboard */,
+				6EFB50102132157600F113F7 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6E69E4AB214E872D00052036 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6E7434762132F75C00A6A6BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E69E4AE214E891200052036 /* Oracao.swift */,
+				6E69E4B0214E8A2400052036 /* CategoriaOracao.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E7434772132F78800A6A6BC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				6EFB50092132157300F113F7 /* OracoesViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6E74347C2133062600A6A6BC /* TabBarIcons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TabBarIcons;
+			sourceTree = "<group>";
+		};
+		6EB0209E2159A49500AA8F27 /* MessageView */ = {
+			isa = PBXGroup;
+			children = (
+				6EB020A12159A57900AA8F27 /* CustomMessageCell.swift */,
+				6EB0209F2159A56B00AA8F27 /* MessageCell.xib */,
+			);
+			path = MessageView;
+			sourceTree = "<group>";
+		};
 		6EFB4FF92132157200F113F7 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +172,8 @@
 				6EFB501B2132157600F113F7 /* catolicoTests */,
 				6EFB50262132157600F113F7 /* catolicoUITests */,
 				6EFB50032132157300F113F7 /* Products */,
+				1A1E1099BAD261F032492BEF /* Pods */,
+				1E222AB31AE46C3B4D4F6855 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +190,14 @@
 		6EFB50042132157300F113F7 /* catolico */ = {
 			isa = PBXGroup;
 			children = (
+				6E69E4AB214E872D00052036 /* Protocols */,
 				6EFB50052132157300F113F7 /* AppDelegate.swift */,
-				6EFB50072132157300F113F7 /* FirstViewController.swift */,
-				6EFB50092132157300F113F7 /* SecondViewController.swift */,
-				6EFB500B2132157300F113F7 /* Main.storyboard */,
 				6EFB500E2132157600F113F7 /* Assets.xcassets */,
-				6EFB50102132157600F113F7 /* LaunchScreen.storyboard */,
+				6E7434762132F75C00A6A6BC /* Model */,
 				6EFB50132132157600F113F7 /* Info.plist */,
+				6E74347C2133062600A6A6BC /* TabBarIcons */,
+				6E6773AD214DBFAD002B042D /* View */,
+				6E7434772132F78800A6A6BC /* ViewController */,
 			);
 			path = catolico;
 			sourceTree = "<group>";
@@ -135,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EFB502C2132157600F113F7 /* Build configuration list for PBXNativeTarget "catolico" */;
 			buildPhases = (
+				4FAFCCC56D3C808DF7166263 /* [CP] Check Pods Manifest.lock */,
 				6EFB4FFE2132157300F113F7 /* Sources */,
 				6EFB4FFF2132157300F113F7 /* Frameworks */,
 				6EFB50002132157300F113F7 /* Resources */,
+				19A04D3F9A21408C114D8C77 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,13 +290,16 @@
 				TargetAttributes = {
 					6EFB50012132157300F113F7 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					6EFB50172132157600F113F7 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 6EFB50012132157300F113F7;
 					};
 					6EFB50222132157600F113F7 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 6EFB50012132157300F113F7;
 					};
 				};
@@ -233,6 +330,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EFB50122132157600F113F7 /* LaunchScreen.storyboard in Resources */,
+				6EB020A02159A56B00AA8F27 /* MessageCell.xib in Resources */,
 				6EFB500F2132157600F113F7 /* Assets.xcassets in Resources */,
 				6EFB500D2132157300F113F7 /* Main.storyboard in Resources */,
 			);
@@ -254,14 +352,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19A04D3F9A21408C114D8C77 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-catolico/Pods-catolico-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-catolico/Pods-catolico-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FAFCCC56D3C808DF7166263 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-catolico-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6EFB4FFE2132157300F113F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EFB500A2132157300F113F7 /* SecondViewController.swift in Sources */,
+				6E69E4B1214E8A2400052036 /* CategoriaOracao.swift in Sources */,
+				6EB020A22159A57900AA8F27 /* CustomMessageCell.swift in Sources */,
+				6EFB500A2132157300F113F7 /* OracoesViewController.swift in Sources */,
+				6E69E4AF214E891200052036 /* Oracao.swift in Sources */,
 				6EFB50062132157300F113F7 /* AppDelegate.swift in Sources */,
-				6EFB50082132157300F113F7 /* FirstViewController.swift in Sources */,
+				4ADC5E8A2170DC7B00CA8924 /* OracaoRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +574,7 @@
 		};
 		6EFB502D2132157600F113F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40004CDDDA61E0F55ABF39BA /* Pods-catolico.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,13 +586,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rz.com.catolico;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		6EFB502E2132157600F113F7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33F78C1C85C2E19787821531 /* Pods-catolico.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -461,7 +605,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rz.com.catolico;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -481,7 +625,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rz.com.catolicoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/catolico.app/catolico";
 			};
@@ -502,7 +646,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rz.com.catolicoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/catolico.app/catolico";
 			};
@@ -522,7 +666,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rz.com.catolicoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = catolico;
 			};
@@ -542,7 +686,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = rz.com.catolicoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = catolico;
 			};
