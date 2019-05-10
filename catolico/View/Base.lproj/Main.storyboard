@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,7 +13,7 @@
         <!--Santo-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="SantoDiaViewController" customModule="catolico" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,23 +45,136 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4179" y="1992"/>
+            <point key="canvasLocation" x="-2925" y="2738"/>
         </scene>
-        <!--user-->
-        <scene sceneID="U0b-jh-agE">
+        <!--Orações-->
+        <scene sceneID="deP-QL-hkx">
             <objects>
-                <viewController title="user" id="6GX-yK-54u" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iBW-qk-VNN">
+                <navigationController id="cqf-8m-3TC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Orações" image="ic_prayer_selected" landscapeImage="ic_prayer_selected" largeContentSizeImage="ic_prayer_selected" id="i2b-cV-xnF"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uHL-VM-765">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="olr-go-TuR" kind="relationship" relationship="rootViewController" id="nMW-gm-LDF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Itf-vw-2tm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2925" y="838"/>
+        </scene>
+        <!--Oracoes View Controller-->
+        <scene sceneID="gmZ-gm-fBE">
+            <objects>
+                <viewController id="olr-go-TuR" customClass="OracoesViewController" customModule="catolico" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1P8-SB-UGM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HNn-2d-DRi">
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8j2-G8-V8b"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cd2-xK-O6U">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic_filter" landscapeImage="ic_filter" largeContentSizeImage="ic_filter" id="HLP-aQ-Cf9">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="btnMenuItemFilter:" destination="olr-go-TuR" id="EVS-H8-mKX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="HNn-2d-DRi" id="Lwm-GU-F8b"/>
+                        <segue destination="kcz-vI-Dap" kind="show" identifier="seguePrayContent" id="NY4-a1-v7q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DwR-Ae-HPX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1697" y="838"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="qFm-Bz-CBP">
+            <objects>
+                <tableViewController id="2lm-Gb-AQb" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LKm-PC-BNd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="IOp-Ij-2YU"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="ic_user_selected.png" landscapeImage="ic_user_selected.png" largeContentSizeImage="ic_user_selected.png" id="t6Q-8m-Cvt"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WqV-3a-FrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <sections>
+                            <tableViewSection headerTitle="Meus Dados" id="I4k-Ai-iLF">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="vRZ-sR-HKR">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vRZ-sR-HKR" id="cPq-CK-caa">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="rhN-G0-TDJ">
+                                        <rect key="frame" x="0.0" y="72" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rhN-G0-TDJ" id="uLN-UN-jJO">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="ISn-X9-TV1">
+                                        <rect key="frame" x="0.0" y="116" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ISn-X9-TV1" id="U12-xL-1tj">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Compartilhe" id="q9K-M0-LdZ">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Zvw-Qk-x0c">
+                                        <rect key="frame" x="0.0" y="188" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zvw-Qk-x0c" id="3zt-P8-we2">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="2lm-Gb-AQb" id="tq0-uv-xHA"/>
+                            <outlet property="delegate" destination="2lm-Gb-AQb" id="7D9-wr-rBY"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ocP-d2-5Ms"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Acd-aK-lVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2675.625" y="1778.75"/>
+            <point key="canvasLocation" x="-1699" y="1739"/>
+        </scene>
+        <!--Meus Dados-->
+        <scene sceneID="UgA-aL-rs5">
+            <objects>
+                <navigationController id="5hi-Zj-5SB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Meus Dados" image="ic_user_selected" landscapeImage="ic_user_selected" largeContentSizeImage="ic_user_selected" id="c3M-OV-PRy"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x97-1W-8Im">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2lm-Gb-AQb" kind="relationship" relationship="rootViewController" id="Q4c-HP-OL0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZHj-8Q-h4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2925" y="1739"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -77,18 +190,18 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="jlP-8W-KaK" kind="relationship" relationship="viewControllers" id="gRq-Sw-HbL"/>
-                        <segue destination="jPU-f5-zB2" kind="relationship" relationship="viewControllers" id="VaT-pX-mzl"/>
-                        <segue destination="6GX-yK-54u" kind="relationship" relationship="viewControllers" id="nin-ar-ZLP"/>
+                        <segue destination="cqf-8m-3TC" kind="relationship" relationship="viewControllers" id="Dun-Qu-Wdp"/>
+                        <segue destination="5hi-Zj-5SB" kind="relationship" relationship="viewControllers" id="GpX-zi-lb9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5402" y="1403"/>
+            <point key="canvasLocation" x="-4751" y="1222"/>
         </scene>
         <!--Liturgia tab-->
         <scene sceneID="Pqp-9B-33n">
             <objects>
-                <viewController title="Liturgia tab" id="jlP-8W-KaK" customClass="LiturgiaViewController" customModule="catolico" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Liturgia tab" id="jlP-8W-KaK" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d9b-cI-CTj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -99,59 +212,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ns-Zv-LMh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4179" y="776"/>
+            <point key="canvasLocation" x="-2925" y="31"/>
         </scene>
-        <!--Oracao-->
-        <scene sceneID="4wA-A2-MhN">
+        <!--Oracao Content View Controller-->
+        <scene sceneID="1cx-Wg-3rM">
             <objects>
-                <viewController title="Oracao" id="jPU-f5-zB2" customClass="OracoesViewController" customModule="catolico" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ML0-B1-TWu">
+                <viewController id="kcz-vI-Dap" customClass="OracaoContentViewController" customModule="catolico" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d5d-Yr-8W6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aAt-a4-3bt">
-                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JD0-P7-xcs">
-                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JD0-P7-xcs" id="Hpj-BZ-9tl">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ef8-Ts-7d7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Oracao Título" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="288" translatesAutoresizingMaskIntoConstraints="NO" id="URY-uX-hZy">
+                                <rect key="frame" x="16" y="95" width="288" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XPl-mV-Mlb">
                                 <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem id="9II-Zt-SBx">
-                                        <barButtonItem key="rightBarButtonItem" title="Item" image="ic_filter" landscapeImage="ic_filter" largeContentSizeImage="ic_filter" id="R6f-GK-1Hs">
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </barButtonItem>
+                                    <navigationItem title="Title" id="Xq7-6M-mEM">
+                                        <barButtonItem key="backBarButtonItem" title="Back" id="kw2-kH-0WS"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fuB-0v-vXt">
+                                <rect key="frame" x="16" y="124" width="288" height="351"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="5TM-kz-tbY" firstAttribute="bottom" secondItem="aAt-a4-3bt" secondAttribute="bottom" id="P3D-qQ-tEV"/>
-                            <constraint firstItem="5TM-kz-tbY" firstAttribute="trailing" secondItem="aAt-a4-3bt" secondAttribute="trailing" id="RwM-h2-1s1"/>
-                            <constraint firstItem="aAt-a4-3bt" firstAttribute="top" secondItem="5TM-kz-tbY" secondAttribute="top" id="XAt-mP-RjZ"/>
-                            <constraint firstItem="aAt-a4-3bt" firstAttribute="leading" secondItem="5TM-kz-tbY" secondAttribute="leading" id="alU-pB-gG3"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="5TM-kz-tbY"/>
+                        <viewLayoutGuide key="safeArea" id="JK9-X4-S7W"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Orações" image="ic_prayer_selected.png" landscapeImage="ic_prayer_selected.png" largeContentSizeImage="ic_prayer_selected.png" selectedImage="ic_prayer_selected" id="DOW-SO-RZH"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="aAt-a4-3bt" id="flW-Pc-lZF"/>
+                        <outlet property="txtOracao" destination="URY-uX-hZy" id="aJ9-L4-LEx"/>
+                        <outlet property="txtOracaoContent" destination="fuB-0v-vXt" id="Ldq-N9-yMl"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zzW-jD-IwM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UIB-Lm-5Pg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2683.125" y="879.92957746478874"/>
+            <point key="canvasLocation" x="-463" y="838"/>
         </scene>
     </scenes>
     <resources>
@@ -161,7 +269,6 @@
         <image name="ic_liturgia_selected" width="20" height="25"/>
         <image name="ic_liturgia_selected.png" width="20" height="25"/>
         <image name="ic_prayer_selected" width="25" height="25"/>
-        <image name="ic_prayer_selected.png" width="25" height="25"/>
-        <image name="ic_user_selected.png" width="25" height="25"/>
+        <image name="ic_user_selected" width="25" height="25"/>
     </resources>
 </document>
